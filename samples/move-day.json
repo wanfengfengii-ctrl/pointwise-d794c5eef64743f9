@@ -1,0 +1,17 @@
+{
+  "day": "2025-06-13",
+  "stations": ["青站", "白站", "红站", "空站"],
+  "observations": [
+    {"observation_id": "r", "station": "红站", "value": 3, "source": "红站晨册#r"},
+    {"observation_id": "a", "station": "青站", "value": 7, "source": "青站晨册#a"}
+  ],
+  "corrections": [
+    [
+      {"observation_id": "a", "station": "白站", "value": 11, "source": "换站单#a"},
+      {"observation_id": "r", "station": "红站", "value": 5, "source": "红站更正#r"}
+    ],
+    [
+      {"observation_id": "a", "station": "白站", "value": 13, "source": "白站复测#a"}
+    ]
+  ]
+}

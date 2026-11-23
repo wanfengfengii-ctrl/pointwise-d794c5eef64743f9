@@ -1,0 +1,9 @@
+{
+  "day": "2025-06-12",
+  "stations": ["青站", "白站", "红站", "空站"],
+  "observations": [
+    {"observation_id": "z", "station": "青站", "value": 0, "source": "青站晨册#z"},
+    {"observation_id": "m", "station": "青站", "value": null, "source": "青站晨册#m"},
+    {"observation_id": "b", "station": "青站", "value": 7, "source": "青站晨册#b"}
+  ]
+}
