@@ -1,8 +1,11 @@
 from collections import defaultdict
 
+from lake.receiving.joint import JointEvidence, JointStationReceipt, lookup_joint_station
 from lake.receiving.receipts import StationReceipt, build_station_receipt, load_accepted_handoff
 from lake.receiving.store import ReceivingStore
 from lake.revisions.observations import require_text
+
+__all__ = ['lookup_station', 'lookup_joint_station', 'JointEvidence', 'JointStationReceipt']
 
 
 def lookup_station(store: ReceivingStore, receipt_id: int, station: str) -> StationReceipt:

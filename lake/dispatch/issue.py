@@ -1,8 +1,11 @@
 from lake.dispatch.archive import next_handoff_id, store_issued
 from lake.dispatch.envelope import HandoffEnvelope
+from lake.dispatch.joint_proof import issue_joint_proof
 from lake.dispatch.selection import select_materials
 from lake.pages.verify import verify_delivered_pages
 from lake.revisions.store import SourceStore
+
+__all__ = ['issue_handoff', 'issue_joint_proof']
 
 
 def issue_handoff(store: SourceStore, day: str, anchor_id: int, target_revision: int, page_ids=None) -> int:
